@@ -1,55 +1,53 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 function Header() {
-    return (
-        <Nav>
-            <Logo src="/images/logo.svg" />
-            <NavMenu>
-                <a>
-                    <img src= "/images/home-icon.svg" alt="home icon" />
-                    <span>HOME</span>
-                </a>
-                <a>
-                    <img src= "/images/search-icon.svg" alt="home icon" />
-                    <span>SEARCH</span>
-                </a>
-                <a>
-                    <img src= "/images/watchlist-icon.svg" alt="home icon" />
-                    <span>WATCHLIST</span>
-                </a>
-                <a>
-                    <img src= "/images/original-icon.svg" alt="home icon" />
-                    <span>ORIGINALS</span>
-                </a>
-                <a>
-                    <img src= "/images/movie-icon.svg" alt="home icon" />
-                    <span>MOVIES</span>
-                </a>
-                <a>
-                    <img src= "/images/series-icon.svg" alt="home icon" />
-                    <span>SERIES</span>
-                </a>
-            </NavMenu>
-            <UserImg src="/images/didi.jpg">
-
-            </UserImg>
-        </Nav>
-    )
+  return (
+    <Nav>
+      <Logo src='/images/logo.svg' />
+      <NavMenu>
+        <a>
+          <img src='/images/home-icon.svg' alt='home icon' />
+          <span>HOME</span>
+        </a>
+        <a>
+          <img src='/images/search-icon.svg' alt='home icon' />
+          <span>SEARCH</span>
+        </a>
+        <a>
+          <img src='/images/watchlist-icon.svg' alt='home icon' />
+          <span>WATCHLIST</span>
+        </a>
+        <a>
+          <img src='/images/original-icon.svg' alt='home icon' />
+          <span>ORIGINALS</span>
+        </a>
+        <a>
+          <img src='/images/movie-icon.svg' alt='home icon' />
+          <span>MOVIES</span>
+        </a>
+        <a>
+          <img src='/images/series-icon.svg' alt='home icon' />
+          <span>SERIES</span>
+        </a>
+      </NavMenu>
+      <UserImg src='/images/didi.jpg'></UserImg>
+    </Nav>
+  );
 }
 
-export default Header
+export default Header;
 
 const Nav = styled.div`
-height: 70px;
-background: #090b13;
-display: flex;
-align-items: center;
-padding: 0 36px;
-`
+  height: 70px;
+  background: #090b13;
+  display: flex;
+  align-items: center;
+  padding: 0 36px;
+`;
 const Logo = styled.img`
-    width: 80px;
-`
+  width: 80px;
+`;
 const NavMenu = styled.div`
     display:flex;
     flex: 1;
@@ -81,7 +79,7 @@ const NavMenu = styled.div`
                 bottom -6px;
                 opacity: 0;
                 transform-origin: left center;
-                transition: all 250ms cubic-bezier(0,25, 0.46, 0.45, 0.94) 0s;
+                transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
                 transform: scaleX(0);
             }
         }
@@ -93,11 +91,11 @@ const NavMenu = styled.div`
             }
         }
     }
-    `
-    const UserImg = styled.img`
-    object-fit: cover;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    cursor: pointer;
-`
+    `;
+const UserImg = styled.img`
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+`;
