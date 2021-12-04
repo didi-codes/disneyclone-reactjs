@@ -7,7 +7,7 @@ function Login() {
     <Container>
       <CTA>
         <CTALogoOne src='/images/cta-logo-one.svg' alt='logos' />
-        <Signup>GET ALL THREE</Signup>
+        <Signup>GET THE DISNEY BUNDLE</Signup>
         <Description>
           Steam now.
           <span>
@@ -62,7 +62,6 @@ const CTALogoOne = styled.img``;
 const Signup = styled.a`
   width: 100%;
   background-color: #0063e5;
-  font-weight: bold;
   padding: 17px 0;
   color: #f9f9f9;
   border-radius: 4px;
@@ -79,7 +78,7 @@ const Signup = styled.a`
   }
 `;
 const Description = styled.p`
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 1.5px;
   text-align: center;
   line-height: 1.5;
@@ -91,6 +90,6 @@ const Description = styled.p`
 `;
 
 const CTALogoTwo = styled.img`
-  margin-top: 5px;
+  margin-top: 20px;
   width: 90%;
 `
