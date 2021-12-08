@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react'
+
 import ImgSlider from './ImgSlider.js'
 import Viewers from './Viewers.js'
 import Movies from './Movies.js'
-import db from '../firebase';
+
 
 import styled from 'styled-components'
 
 function Home() {
-    useEffect(() => {
-        db.collection("movies").onSnapshot((snapshot) => {
-            console.log(snapshot);
-        })
-    }, [])
+   
 
     return (
         <Container>
